@@ -38,18 +38,18 @@ usuarios.push(user3)
 let user4 = {
     nomeDoUsuario: 'Leila',
     cpf: '535.554.663-30',
-    email: '@gmail.com',
-    senha: '',
-    cargo: ''
+    email: 'lili13@gmail.com',
+    senha: '@lili13',
+    cargo: 'Servidor'
 }
 usuarios.push(user4)
 
 let user5 = {
-    nomeDoUsuario: '',
-    cpf: '',
-    email: '@gmail.com',
-    senha: '',
-    cargo: ''
+    nomeDoUsuario: 'Lucius',
+    cpf: '279.486.340-10',
+    email: 'lucidobem@gmail.com',
+    senha: '#luluefada',
+    cargo: 'Gerente'
 }
 usuarios.push(user5)
 
@@ -58,7 +58,7 @@ let  empresa1 = {
      cnpj: '123456',
      email: '@pichau.gmail.com.br',
      telefone: '(84) 9876-5432',
-     produtos: ['Microfone Pichau Izar, RGB, Preto', 'Microfone Pichau Polaris, Usb, Preto', 'Cadeira Game Pichau Omega S Assasins Creed Legacy, Preto E Vermelho', 'Monitor Profissional Pichau Perseus Pro, 27 POL. IPS, QHD, 4MS, 75HZ, BASE AJUSTAVEL, HDMI/DP', 'MONITOR GAMER PICHAU CEPHEUS FUSE 28, 28 POL, IPS, 4K, 1MS, 144HZ, FREESYNC E G-SYNC, HDMI/DP']
+     produtos: ['Microfone Pichau Izar, RGB, Preto Microfone Pichau Polaris, Usb, Preto Cadeira Game Pichau Omega S Assasins Creed Legacy, Preto E Vermelho Monitor Profissional Pichau Perseus Pro, 27 POL. IPS, QHD, 4MS, 75HZ, BASE AJUSTAVEL, HDMI/DP MONITOR GAMER PICHAU CEPHEUS FUSE 28, 28 POL, IPS, 4K, 1MS, 144HZ, FREESYNC E G-SYNC, HDMI/DP']
 
 
 }
@@ -69,7 +69,7 @@ let empresa2 = {
     cnpj: '1234567',
     email: '@terabyte.gmail.com.br',
     telefone: '(84) 1098-7654',
-    produtos: ['xbox series s 512gb', 'nintendo switch oled 64gb, um joycon', 'Gabinete Gamer Montech King 95 PRO, ARGB, Mid Tower, Vidro Temperado, ATX, White, Sem Fonte, Com 6 Fans + Suporte Montech VH2', 'Monitor Gamer Duex, 27 Pol, Full HD, IPS, 240Hz, 1ms, HDMI/DP, DX270GHQ 240HZ', 'Monitor Gamer SuperFrame Precision, 27 Pol Curvo, Quad HD, 124.4% sRGB, FreeSync/G-Sync, 1ms, 165Hz, HDMI/DP, SFV2701G']
+    produtos: ['xbox series s 512gb nintendo switch oled 64gb, um joycon Gabinete Gamer Montech King 95 PRO ARGB, Mid Tower, Vidro Temperado, ATX, White, Sem Fonte, Com 6 Fans + Suporte Montech VH2 Monitor Gamer Duex, 27 Pol, Full HD, IPS, 240Hz, 1ms, HDMI/DP, DX270GHQ 240HZ Monitor Gamer SuperFrame Precision, 27 Pol Curvo, Quad HD, 124.4% sRGB, FreeSync/G-Sync, 1ms, 165Hz, HDMI/DP, SFV2701G']
 
 }
 fornecedor.push(empresa2)
@@ -88,7 +88,7 @@ let empresa4 = {
     cnpj: '98.765.432/0001-10',
     email: 'atendimento@alimentosabc.com.br',
     telefone: '(84) 9876-5432',
-    produtos: ['ps5,', 'placa de vídeo ABC', 'processador ABC', 'gabinete ABC','teclado ABC']
+    produtos: ['ps5, placa de vídeo ABC processador ABC gabinete ABC teclado ABC']
 
 }
 fornecedor.push(empresa4)
@@ -98,7 +98,7 @@ let empresa5 = {
     cnpj: '5478-3475',
     email: 'lmn@gmail.com.br',
     telefone: '(84) 6578-4576',
-    produtos: ['notebook', 'carregador', 'xbox one x', 'cadeira gamer', 'luminária gamer']
+    produtos: ['notebook carregador xbox one x cadeira gamer luminária gamer']
 
     
 }
@@ -109,11 +109,11 @@ console.log(empresa5[4].nomeDaEmpresa)
 /* ************* FUNÇÕES ********* */
 
 function cadastrarUsuarios() {
-    let nomeDoUsuario;
-    let cpf;
-    let email;
-    let senha;
-    let cargo;
+    let nomeDoUsuario = prompt('Informe o Nome do Usuario a ser Cadastrado:');
+    let cpf = prompt('Informe o CPF do Usuario a ser Cadastrado:');
+    let email = prompt('Informe o Emeil do Usuario a ser Cadastrado:');
+    let senha = prompt('Informe uma Senha para o Cadastrado do Usuario:');
+    let cargo = prompt('Informe o Cargo do Usuario a ser Cadastrado:');
     
 }
 
@@ -136,13 +136,13 @@ function alterarDadoUsuario() {
     /* 
        Aqui vocês implementam o código referente a função
        Usar IFs para verificar se o e-mail e senha estão corretos.
-    */
+    */ 
 }
 
 
-function login(nome, senha) {
+function logarUsuarioR(nome, senha) {
     
-    if (nome == 'usuario' + senha =='senha') {
+    if (nome == 'usuario' && senha =='senha') {
         
     console.log('Login bem-sucedido! Bem-vindo, ' + nome + '.');
         return true; 
@@ -153,8 +153,8 @@ function login(nome, senha) {
     }
 }
 
-var nome = String ('Digite seu nome de usuário:');
-var senha = String ('Digite sua senha:');
+var nome = ('Digite seu nome de usuário:');
+var senha = ('Digite sua senha:');
 
 
 if (login(nome, senha)) {
@@ -191,10 +191,9 @@ const produtoAdicionado = adicionarProduto('Camiseta', 25.99);
 
 function validadeIndividual() {
     let nome = prompt("Digite o nome do produto para consultar sua validade:");  
-    /* 
-       Aqui vocês implementam o código referente a função 
-    */
 }
+
+
 
 function imprimirRelatorioValidades() {
     /* 
@@ -235,10 +234,16 @@ function listarFornecedores() {
 }
 
 function removerFornecedor() {
-    /* 
-       Aqui vocês implementam o código referente a função
-       Usar IFs para verificar se o e-mail e senha estão corretos.
-    */
+    let remover = prompt('informe qual o fornecedor que deseja remover(nome e telefone)')
+    if (fornecedor(nome.dofornecedor, cnpj.dofornecedor, telefone.dofornecedor, email.dofornecedor, produtos.dofornecedor == nomeDaEmpresa.fornecedor, cnpj.fornecedor, telefone.fornecedor, email.fornecedor, produtos.fornecedor)){
+    console.log(`o fornecedor ${nomeDaEmpresa} cujo número de telefone é ${telefone.dofornecedor} está removido`)
+    }else{
+        console.log('remoção inválida')
+    }
+    
+    
+
+       
 }
 
 
@@ -292,4 +297,4 @@ listarFornecedores();
 /* 13 - Remover 1 fornecedor e depois imprimir a lista completa */
 removerFornecedor();
 listarFornecedores();
-
+//,,,

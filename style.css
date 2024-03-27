@@ -1,0 +1,32 @@
+html, body {margin: 0;
+    padding: 0;
+    border: 0;
+}
+html{
+
+    background-color: rgb(119, 189, 214);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    min-height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+body{
+    background-color: rgb(255, 255, 255)89, 0, 255;    
+    width: 100vw;
+    max-width: 950px;
+    text-align: center;
+    box-shadow: 20px 20px 10px #000000aa;
+    padding: 25px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+}
+title{
+    color: #ffffff;
+    text-shadow: 2px 1px 2px #000000;
+    text-align: center;
+
+}
